@@ -4,11 +4,34 @@
     background-image: url(./Assets/mew.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    justify-content: center;
-    align-items: start;
+    background-attachment:fixed;
+    position: sticky;
+    height:180vh;
+    bottom: 0;
+
 }
 
+.nav{
+    display: flex;
+ }
+ .res{
+    margin-left:65%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+ }
+
+ .dar{
+    display: flex;
+    justify-content: center;
+ }
+
+ 
+.cla{
+    margin-inline-start: 14%;
+    margin-top: 3%;
+}
+ 
+ 
 
 @media (max-width:480px){
     .logscr{
@@ -28,7 +51,9 @@
         height: 100vh;
         justify-content: center;
         align-items: start;
+        
      }
     
+     
     
 }
