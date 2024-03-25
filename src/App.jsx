@@ -3,6 +3,7 @@ import './App.css';
 import Auth from './Auth';
 import Home from './Home';
 import Regdata from './Regdata';
+import PageNotFound from './PageNotFound';
 
 
 
@@ -15,6 +16,7 @@ function App() {
         <Route path='/home'  element={<Home/>} />
         <Route  path='/'  element={<Auth/>} />
         <Route  path='/register'  element={<Auth register />} />
+        <Route path='/*' element={<PageNotFound/>}/>
 
       </Routes>
     </div>

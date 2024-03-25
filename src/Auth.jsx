@@ -42,7 +42,10 @@ const loginData=async()=>{
         const result=await loginAPI(userData)
         console.log(result);
         if(result.status==200){
-            alert(`Welcome ${userData.name}`)
+            alert(`Welcome`)
+            sessionStorage.setItem("existinguser",JSON.stringify(result.data.user))
+            sessionStorage.setItem('token',result.data.token)
+
             location('/home')
         }
         else{
@@ -79,7 +82,7 @@ const loginData=async()=>{
 
 {
     isRegisterForm && (
-        <div>
+        <div style={{marginLeft:'27%',marginTop:'3.5%'}}>
             <label className='text-black'>Gender:</label>
             <div className="form-check form-check-inline">
                 <input
