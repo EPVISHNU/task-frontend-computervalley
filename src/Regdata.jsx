@@ -184,9 +184,9 @@ const clearForm = ()=>{
               <label className='text-black'>Place:</label>
               <select name='place' value={formDetails.place} onChange={handleInputChange}>
                 <option value="">Select a place</option>
-                <option value="Place1">Place1</option>
-                <option value="Place2">Place2</option>
-                <option value="Place3">Place3</option>
+                <option value="Place1">India</option>
+                <option value="Place2">Singapore</option>
+                <option value="Place3">U.S.A</option>
               </select>
             </div>
 
